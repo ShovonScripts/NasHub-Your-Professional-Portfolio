@@ -1,38 +1,46 @@
-# AgenceX - A simple landing page for a digital agency
+# NasHub - Your Professional Portfolio, Live Online
 
-#### Preview
+NasHub is a premium portfolio service that builds and hosts your personal portfolio website. No tech skills needed.
 
- - [Demo](https://nashub.uk/)
- - 
+## Demo
+
+- [Live Demo](https://nashub.uk/)
+
+## Features
+
+- **Premium Design**: Modern, responsive, and professional aesthetics.
+- **Hand-Coded**: Built with Astro and Tailwind CSS for maximum performance.
+- **SEO Optimized**: Fully optimized for search engines to help you get discovered.
+- **Fast Hosting**: Blazing fast performance out of the box.
+
 ## Getting Started
 
-1. Clone Repository
-```
-git clone https://github.com/ShovonScripts/NasHub-Your-Professional-Portfolio
-```
-2. Install Dependencies
-```
-npm i
-```
-3. Run the development server:
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-## Author 
-```
-Design and code is completely written by John Kat and development team. 
-```
+3. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## Tech Stack
+
+- [Astro](https://astro.build/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## Author
+
+**Nasir Digital Consultancy Limited**
+[ndc-agency.co.uk](https://ndc-agency.co.uk)
 
 ## License
 
- - Design and Code is Copyright &copy; <a href="https://github.com/johnkat-mj" target="_blank">John Kat</a>
- - Licensed cover under [MIT]
- - Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+This project is licensed under the MIT License.
