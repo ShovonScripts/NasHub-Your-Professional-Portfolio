@@ -1,0 +1,70 @@
+---
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+---
+
+<section id="why-us" class="relative pt-20 pb-20">
+    <Container>
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            
+            <div class="w-full lg:w-1/2 order-2 lg:order-1 relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-orange-500 to-orange-500 rounded-3xl blur-3xl opacity-20"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+                    
+                    <div class="bg-box-bg/50 backdrop-blur-lg border border-box-border rounded-2xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-300 transform translate-y-4">
+                        <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-heading-2 mb-2">Done for you</h3>
+                        <Paragraph className="text-sm">You don't build anything. Our developer creates your portfolio by hand, personalised to you. Not a generic template.</Paragraph>
+                    </div>
+
+                    <div class="bg-box-bg/50 backdrop-blur-lg border border-box-border rounded-2xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-300">
+                        <div class="w-12 h-12 bg-green-500/10 text-green-400 rounded-xl flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-heading-2 mb-2">Affordable for everyone</h3>
+                        <Paragraph className="text-sm">Most agencies charge £200–£500 for a portfolio. We charge £10 to create and £5/month to keep it live.</Paragraph>
+                    </div>
+
+                    <div class="bg-box-bg/50 backdrop-blur-lg border border-box-border rounded-2xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-300 transform sm:translate-y-4">
+                        <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-heading-2 mb-2">Your own live link</h3>
+                        <Paragraph className="text-sm">You get a real, shareable URL: <span class="font-medium text-orange-400">yourname.nashub.uk</span>, which works perfectly on phones, tablets, and desktops.</Paragraph>
+                    </div>
+
+                    <div class="bg-box-bg/50 backdrop-blur-lg border border-box-border rounded-2xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-300">
+                        <div class="w-12 h-12 bg-red-500/10 text-red-400 rounded-xl flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-heading-2 mb-2">Easy to update</h3>
+                        <Paragraph className="text-sm">Need to change something? Log in and submit a request. Minor changes are included. Major updates are just £10.</Paragraph>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 order-1 lg:order-2 flex flex-col justify-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading-1 mb-6">
+                    Why choose <span class="text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-orange-500">Nas Hub?</span>
+                </h2>
+                <Paragraph className="text-lg mb-8">
+                    We believe everyone deserves a professional online presence without the hassle of drag-and-drop builders, complex hosting setups, or expensive agency fees. 
+                </Paragraph>
+                <Paragraph className="text-lg">
+                    With Nas Hub, you focus on your career, and we handle the tech. Get a beautiful, hand-coded portfolio that speaks for itself.
+                </Paragraph>
+            </div>
+            
+        </div>
+    </Container>
+</section>

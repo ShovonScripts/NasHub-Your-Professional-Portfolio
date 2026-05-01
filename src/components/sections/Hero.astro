@@ -1,0 +1,261 @@
+---
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+---
+
+<section class="relative pt-36 lg:pt-44 pb-24 lg:pb-36 overflow-hidden" id="hero">
+    
+    <!-- Ambient background orbs — soft in light, glowing in dark -->
+    <div class="hero-bg-orbs absolute inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <div class="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-orange-400/15 dark:bg-orange-500/20 blur-[120px]"></div>
+        <div class="absolute top-1/3 -right-20 w-[400px] h-[400px] rounded-full bg-orange-300/15 dark:bg-orange-500/15 blur-[100px]"></div>
+        <div class="absolute -bottom-40 left-1/3 w-[350px] h-[350px] rounded-full bg-red-300/10 dark:bg-red-500/10 blur-[100px]"></div>
+    </div>
+
+    <!-- Subtle dot grid pattern overlay -->
+    <div class="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(circle, rgb(var(--heading-1)) 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+    <Container className={"relative z-10"}>
+        <div class="flex flex-col lg:flex-row gap-16 lg:gap-20 items-center">
+
+            <!-- Left: Copy -->
+            <div class="hero-copy flex flex-col items-center text-center lg:text-left lg:items-start lg:flex-1 max-w-2xl lg:max-w-none">
+                
+                <!-- Status badge -->
+                <div class="hero-badge inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-box-bg border border-box-border backdrop-blur-md mb-8 shadow-md shadow-box-shadow">
+                    <span class="relative flex h-2.5 w-2.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-sm font-semibold text-heading-2 tracking-wide">Now Live in the UK</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="hero-headline text-4xl/[1.15] sm:text-5xl/[1.15] md:text-6xl/[1.1] xl:text-[4.25rem]/[1.1] font-extrabold text-heading-1 uppercase tracking-tight">
+                    Your professional portfolio, live online.
+                    <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-orange-500 to-red-600 dark:from-orange-400 dark:via-orange-400 dark:to-red-400">
+                        For just £10.
+                    </span>
+                </h1>
+                
+                <!-- Sub-headline -->
+                <p class="hero-sub mt-7 text-lg sm:text-xl text-heading-3 leading-relaxed max-w-xl lg:max-w-none">
+                    We build your personal portfolio website and host it live at your own link, like 
+                    <span class="font-semibold text-heading-1">yourname.nashub.uk</span>. 
+                    No tech skills needed. Fill in your details and we handle everything.
+                </p>
+                
+                <!-- CTA group -->
+                <div class="hero-cta mt-10 flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
+                    <a href="https://app.nashub.uk" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto group">
+                        <button class="relative w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-orange-600 to-orange-600 text-white font-bold text-lg transition-all duration-300 shadow-xl shadow-orange-600/25 dark:shadow-orange-500/20 hover:shadow-2xl hover:shadow-orange-600/30 dark:hover:shadow-orange-500/30 hover:-translate-y-0.5 active:translate-y-0 overflow-hidden">
+                            <span class="relative z-10 flex items-center justify-center gap-2">
+                                Get My Portfolio for £10
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </span>
+                            <span class="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                        </button>
+                    </a>
+                    <div class="text-sm text-heading-3 text-center sm:text-left leading-snug">
+                        <span class="block font-semibold text-heading-2">Includes first month hosting.</span> 
+                        Keep it live for just £5/month.
+                    </div>
+                </div>
+
+                <!-- Trust signals -->
+                <div class="hero-trust mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-heading-3">
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-emerald-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                        UK Registered Company
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-emerald-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Ready in 2–3 days
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-emerald-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h.096c.5 0 .905.405.905.905 0 .714-.211 1.412-.608 2.006L4.57 13.56c-.16.248-.182.56-.059.83l1.393 2.36z" />
+                        </svg>
+                        Cancel anytime
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Premium portfolio mockup -->
+            <div class="hero-mockup flex-1 w-full max-w-lg lg:max-w-md xl:max-w-lg mx-auto lg:mx-0">
+                <div class="relative">
+                    <!-- Glow behind card -->
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-orange-500/20 via-orange-500/10 to-red-500/20 dark:from-orange-500/30 dark:via-orange-500/20 dark:to-red-500/30 rounded-[2rem] blur-2xl hero-glow"></div>
+                    
+                    <!-- Main card -->
+                    <div class="relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-white/10 rounded-2xl shadow-2xl shadow-gray-300/50 dark:shadow-black/40 overflow-hidden">
+                        
+                        <!-- Browser chrome -->
+                        <div class="flex items-center gap-2 px-4 py-3 border-b border-gray-100 dark:border-white/5 bg-gray-50/80 dark:bg-white/[0.02]">
+                            <div class="flex gap-1.5">
+                                <div class="w-2.5 h-2.5 rounded-full bg-red-400/80"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-yellow-400/80"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-green-400/80"></div>
+                            </div>
+                            <div class="flex-1 mx-3">
+                                <div class="flex items-center gap-2 bg-gray-100 dark:bg-white/5 rounded-md px-3 py-1.5 text-xs">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 text-emerald-500 shrink-0">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                    </svg>
+                                    <span class="text-heading-3 truncate font-medium">sarah.nashub.uk</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Portfolio content mockup -->
+                        <div class="p-5">
+                            <!-- Cover area -->
+                            <div class="h-20 bg-gradient-to-r from-orange-500 to-orange-500 rounded-xl mb-4 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            
+                            <!-- Profile -->
+                            <div class="flex items-start gap-4 -mt-10 mb-5 px-2 relative z-10">
+                                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-400 to-orange-500 border-[3px] border-white dark:border-gray-900 shadow-lg shrink-0"></div>
+                                <div class="pt-7 flex-1 min-w-0">
+                                    <div class="h-4 w-28 bg-heading-1/15 dark:bg-heading-1/10 rounded-md mb-1.5"></div>
+                                    <div class="h-3 w-36 bg-heading-1/8 dark:bg-heading-1/5 rounded-md"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Bio lines -->
+                            <div class="space-y-2 px-2 mb-5">
+                                <div class="h-2.5 w-full bg-heading-1/6 dark:bg-heading-1/4 rounded-full"></div>
+                                <div class="h-2.5 w-full bg-heading-1/6 dark:bg-heading-1/4 rounded-full"></div>
+                                <div class="h-2.5 w-3/4 bg-heading-1/6 dark:bg-heading-1/4 rounded-full"></div>
+                            </div>
+                            
+                            <!-- Skill tags -->
+                            <div class="flex flex-wrap gap-2 px-2 mb-5">
+                                <div class="h-6 w-16 bg-orange-100 dark:bg-orange-500/10 rounded-full border border-orange-200 dark:border-orange-500/20"></div>
+                                <div class="h-6 w-14 bg-orange-100 dark:bg-orange-500/10 rounded-full border border-orange-200 dark:border-orange-500/20"></div>
+                                <div class="h-6 w-20 bg-red-100 dark:bg-red-500/10 rounded-full border border-red-200 dark:border-red-500/20"></div>
+                                <div class="h-6 w-12 bg-emerald-100 dark:bg-emerald-500/10 rounded-full border border-emerald-200 dark:border-emerald-500/20"></div>
+                            </div>
+                            
+                            <!-- Project cards -->
+                            <div class="grid grid-cols-2 gap-2.5 px-2">
+                                <div class="aspect-[4/3] bg-gray-100 dark:bg-white/[0.03] rounded-lg border border-gray-200/60 dark:border-white/5 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-heading-1/10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159M14.25 4.5l-2.009 2.009a2.25 2.25 0 000 3.182l2.009 2.009M10.5 6.75l3-3m0 0l3 3m-3-3v10.5" />
+                                    </svg>
+                                </div>
+                                <div class="aspect-[4/3] bg-gray-100 dark:bg-white/[0.03] rounded-lg border border-gray-200/60 dark:border-white/5 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-heading-1/10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating notification card -->
+                    <div class="absolute -left-4 sm:-left-8 bottom-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-white/10 rounded-xl px-4 py-3 shadow-xl shadow-gray-200/50 dark:shadow-black/30 hero-float-card z-20 max-w-[180px]">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-500/20 flex items-center justify-center shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-emerald-600 dark:text-emerald-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-heading-1">Portfolio Live</div>
+                                <div class="text-[10px] text-heading-3">sarah.nashub.uk</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating stats card -->
+                    <div class="absolute -right-2 sm:-right-6 top-28 bg-white dark:bg-gray-800 border border-gray-200 dark:border-white/10 rounded-xl px-4 py-3 shadow-xl shadow-gray-200/50 dark:shadow-black/30 hero-float-card-2 z-20">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-500/20 flex items-center justify-center shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-orange-600 dark:text-orange-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-heading-1">100% Responsive</div>
+                                <div class="text-[10px] text-heading-3">Mobile ready</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </Container>
+</section>
+
+<style>
+    /* Entrance animations */
+    .hero-badge {
+        animation: fadeInUp 0.6s ease-out both;
+        animation-delay: 0.1s;
+    }
+    .hero-headline {
+        animation: fadeInUp 0.7s ease-out both;
+        animation-delay: 0.25s;
+    }
+    .hero-sub {
+        animation: fadeInUp 0.7s ease-out both;
+        animation-delay: 0.4s;
+    }
+    .hero-cta {
+        animation: fadeInUp 0.7s ease-out both;
+        animation-delay: 0.55s;
+    }
+    .hero-trust {
+        animation: fadeInUp 0.6s ease-out both;
+        animation-delay: 0.7s;
+    }
+    .hero-mockup {
+        animation: fadeInUp 0.8s ease-out both;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(28px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Floating cards animation */
+    .hero-float-card {
+        animation: floatSlow 5s ease-in-out infinite;
+    }
+    .hero-float-card-2 {
+        animation: floatSlow 5s ease-in-out infinite;
+        animation-delay: 1.5s;
+    }
+
+    @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+    }
+
+    /* Glow pulse */
+    .hero-glow {
+        animation: glowPulse 4s ease-in-out infinite;
+    }
+
+    @keyframes glowPulse {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 0.8; }
+    }
+</style>
