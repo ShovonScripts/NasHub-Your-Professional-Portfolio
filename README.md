@@ -2,16 +2,13 @@
 
 #### Preview
 
- - [Demo](https://themewagon.github.io/agenceX/)
-
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/agenceX/)
-
+ - [Demo](https://nashub.uk/)
+ - 
 ## Getting Started
 
 1. Clone Repository
 ```
-git clone https://github.com/themewagon/agenceX.git
+git clone https://github.com/ShovonScripts/NasHub-Your-Professional-Portfolio
 ```
 2. Install Dependencies
 ```
